@@ -34,21 +34,21 @@ def choose():
     keys = list(krewes)
     period = rng.randint(0,len(keys)-1) 
     period = keys[period] #randomly selects the period
-    devo = rng.randint(0, len(krewes[period])-1) #randomly selects the devo
+    devo = rng.randint(0, len(krewes[period])-1) #randomly selects a devo from selected period
     devo = krewes[period][devo]
     
 
     #using random
     '''
     keys = list(krewes)
-    period = keys[int(rng.random()*2)]
-    classlist = krewes[keys[int(rng.random()*2)]]
-    devo = classlist[int(rng.random()*len(classlist))]
+    period = keys[int(rng.random()*3)] #selects period based on a random index
+    classlist = krewes[period] #takes the list of the students in that period from krewes
+    devo = classlist[int(rng.random()*len(classlist)+1)] #selects a random devo from selected period
     '''
 
-    '''
     #using choice
-    period = rng.choice([2,7,8]) #choose a random key
+    '''
+    period = rng.choice([2, 7, 8]) #choose a random key
     devo = rng.choice(krewes[period]) #choose a random index of the list that corresponds with the chosen key
     '''
 
@@ -56,5 +56,3 @@ def choose():
     return output
 
 print(choose())
-
-
