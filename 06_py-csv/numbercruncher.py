@@ -34,7 +34,7 @@ def choice():
     number = random.random() * 99.8
     values = list(dictionary.values())
     keys = list(dictionary.keys())
-    counter = 0
+    counter = -1
     print(values)
     for x in values:
         if number > 0:
