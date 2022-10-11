@@ -7,6 +7,7 @@ Oct 6, 2022
 
 from flask import Flask
 import random
+
 app = Flask(__name__)
 
 #initialize file and dictionary
@@ -45,6 +46,8 @@ def pickJob(job_percentages):
         if (random_percent <= 0):
             return job
 
+def style():
+    return open("style.css", "r").read()
 
 @app.route("/")
 def main():
@@ -53,10 +56,15 @@ def main():
 
     #create big string to output
     #add names and TNPG
-    string = """<h1>The Great Kidding Scuba-Doo Divers</h1>
+    string = f'''
+    <head>
+    <style> {style()} </style>
+    </head>
+    '''
+    string += """<h1>The Great Kidding Scuba-Doo Divers</h1>
     <h2>David Chen, Kevin Li, Karen Shekyan</h2> <br/>"""
     #add job choice
-    string += "<h3>Job choice: </h3>" + pickJob(dictionary) + "<br/><br/><br/>"
+    string += "<h3>Job choice: </h3><p>" + pickJob(dictionary) + "</p><br/><br/><br/>"
 
     #create table to display jobs and weights
     string += """<h3>Jobs table: </h3>
