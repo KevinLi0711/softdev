@@ -12,7 +12,7 @@ from flask import session
 app = Flask(__name__)    #create Flask object
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = b'v9y$B&E)H+MbQeThWmZq4t7w!z%C*F-J'
 
 username = 'karate'
 password = '1234'

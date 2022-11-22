@@ -1,0 +1,12 @@
+#Adorable Didactic Elephants: Anjini Katari, Kevin Li
+#SoftDev
+#K20 -- API keys
+#2022-11-21
+#time spent: <elapsed time in hours, rounded to nearest tenth>
+
+DISCO:
+- there are two cookies when we get the json file using our api key
+- NASAD APOD documentation: https://github.com/nasa/apod-api/blob/master/README.md
+
+QCC:
+- we didn't see our GET requests show up in the dev concole but we were able to load a json file in our browser
