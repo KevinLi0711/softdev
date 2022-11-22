@@ -6,7 +6,7 @@
 
 DISCO:
 - there are two cookies when we get the json file using our api key
-- NASAD APOD documentation: https://github.com/nasa/apod-api/blob/master/README.md
+- NASA APOD documentation: https://github.com/nasa/apod-api/blob/master/README.md
 
 QCC:
 - we didn't see our GET requests show up in the dev concole but we were able to load a json file in our browser
