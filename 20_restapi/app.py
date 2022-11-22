@@ -7,14 +7,25 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+import requests
 app = Flask(__name__) 
 
 @app.route("/")       
 def hello_world():
-    print("the __name__ of this module is... ")
-    print(__name__)
-    print(request.url)
-    return "No hablo queso!"
+    file = open("key_nasa.txt", 'r')
+    file = file.read()
+    print(file)
+
+    x = requests.get('https://api.nasa.gov/planetary/apod?api_key=' + file)
+    print(x)
+    print(x.request)
+    print(x.json())
+    #print(x.content)
+    json = x.json()
+    image_url = json["url"]
+    print(image_url)
+
+    return render_template("main.html", image = image_url)
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change

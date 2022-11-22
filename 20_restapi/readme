@@ -6,7 +6,7 @@
 
 DISCO:
 - there are two cookies when we get the json file using our api key
-- NASA APOD documentation: https://github.com/nasa/apod-api/blob/master/README.md
+- to display an image using html, we use <img src="image_link_here">
 
 QCC:
 - we didn't see our GET requests show up in the dev concole but we were able to load a json file in our browser
