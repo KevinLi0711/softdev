@@ -23,9 +23,11 @@ def hello_world():
     #print(x.content)
     json = x.json()
     image_url = json["url"]
+    explanation = json["explanation"]
+    title = json["title"]
     print(image_url)
 
-    return render_template("main.html", image = image_url)
+    return render_template("main.html", image = image_url, explanation = explanation, title = title)
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
