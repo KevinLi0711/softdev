@@ -1,0 +1,23 @@
+#Adorable Didactic Elephants: Anjini Katari, Kevin Li
+#SoftDev
+#K23 -- A Day of Noodling
+#2022-11-30
+#time spent: 1.0 hour
+
+DISCO:
+ * just by linking the foundation stylesheet, you get access to a css file with new stylings
+ * existing things like forms get visually revamped
+ * you can type in . followed by the name of a class name and hit tab to autofill it into a div with class = <inputted class name>
+ ```
+ .row
+ ```
+ becomes
+ ```
+ <div class="row"></div>
+ ```
+ * this is useful because foundation adds css styling to a bunch of classes that make formatting websites more convenient. For example, the line above with class="row" adds everything inside the <div> on a new line
+ * can download an entire page template or portions of it 
+ * rest apis come in handy when you want to add random cat pictures to your html page
+
+QCC: 
+ * How are you meant to use Foundation building blocks without installing anything and without making a new file for the extra css?
