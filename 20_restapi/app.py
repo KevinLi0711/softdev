@@ -8,26 +8,17 @@ from flask import Flask
 from flask import request
 from flask import render_template
 import requests
+import playsound
 app = Flask(__name__) 
 
 @app.route("/")       
 def hello_world():
-    file = open("key_nasa.txt", 'r')
-    file = file.read()
-    print(file)
+    owen_wilson = requests.get("https://owen-wilson-wow-api.onrender.com/wows/random")
+    owen_wilson = owen_wilson.json()
+    wow = owen_wilson[0]['audio']
+    playsound.playsound(wow)
 
-    x = requests.get('https://api.nasa.gov/planetary/apod?api_key=' + file)
-    print(x)
-    print(x.request)
-    print(x.json())
-    #print(x.content)
-    json = x.json()
-    image_url = json["url"]
-    explanation = json["explanation"]
-    title = json["title"]
-    print(image_url)
-
-    return render_template("main.html", image = image_url, explanation = explanation, title = title)
+    return "wow"
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change

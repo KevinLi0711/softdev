@@ -1,0 +1,26 @@
+Adorable Didactic Elephants: Anjini Katari, Kevin Li
+SoftDev
+K24 -- Mmmmm... Tasty!
+2022-12-01
+time spent: 1.5hrs
+
+DISCO:
+ * unlike in foundation, images in cards need to be tagged with class="card-img-top" or something similar
+ * <div class="p-3 border bg-light"> --> p-3 changes the top and bottom margin lengths
+
+QCC:
+* what's up with the margin on the right?? we spent a solid 30 minutes trying ot get rid of it with no avail
+* it seems a lot harder to properly center things in bootstrap than in foundation
+
+q0 (Did you have to consult resources beyond your Devo-generated on-ramp? Your answer should be a single binary digit.)
+1
+
+q0b If answer to preceding question is 1, cite all resources consulted – including verbal consultations and/or neighbouring team’s readme. 1citation/line.)
+https://getbootstrap.com/docs/4.0/layout/grid/
+https://getbootstrap.com/docs/5.2/layout/columns/
+
+
+q1 (only to be answered after you have finished… At this point, which FEF do you prefer, and why?)
+We're both slightly leaning towards foundation, though both seem equally good for the most part. 
+Foundation seems to have better graphics and (from what we've seen) allows us to control of widgets and objects more! For example, we had some frustration with Bootstrap and not being able to center elements correctly, but we didn't have that problem with Foundation
+
