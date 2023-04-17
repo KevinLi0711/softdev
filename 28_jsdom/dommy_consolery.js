@@ -12,7 +12,6 @@
     		If you find yourself falling out of flow mode, consult 
     		other teams
     		MDN
-
    A few comments have been pre-filled for you...
    
    (delete this block comment once you are done)
@@ -155,5 +154,3 @@ console.log(myFxn) //This logs the entire function. The code within is shown in 
 addItem(myFxn) //The parameters and body of the myFxn function is added to the list
 addItem(myFxn(2, 3)) //Logs 6 in console and also adds 6 to the list
 addItem(fact)
-
-
