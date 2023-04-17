@@ -135,12 +135,25 @@ function gcd(a,b) {
     return gcd(b%a,a);
 }
 
+addItem(fact(4)) //24
+addItem(fib(7)) //13
+addItem(gcd(51, 27)) //3
+
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
 const myFxn = (param1, param2) => {
   // body
+  retVal = param1 * param2
+  console.log(retVal)
   return retVal;
 };
+
+//myFxn = (2, 3) //Error in console says "caught TypeError: Assignment to constant variable."
+console.log(myFxn) //This logs the entire function. The code within is shown in console
+ 
+addItem(myFxn) //The parameters and body of the myFxn function is added to the list
+addItem(myFxn(2, 3)) //Logs 6 in console and also adds 6 to the list
+addItem(fact)
 
 
