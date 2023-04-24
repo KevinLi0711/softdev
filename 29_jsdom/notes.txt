@@ -1,0 +1,26 @@
+DISCO/QCC
+-----------------------------------------------------------------
+* The html displayed is the html after it has been modified by JS. No remnants of the non-modified html
+* JS functions can be called in dev console
+* You can have a list of classes in the html file.
+* By adding a string to the class, you are adding a class identifier for that element.
+* Depending on the order of the classes in the styling, you will only be able to visually see some of the changes.
+* Functions are objects and can be passed as parameters
+* There's just one line in index.html that applies the JS
+* Function calls go inside the JS file
+* The arrow function seems to be mostly the same as a regular function but a different syntax
+* Arrow functions might be nameless? It seems like you can’t just use the arrow syntax without assigning the whole function to a variable, but the variable is not the name of the function
+* classes defined later in the html file have priority, so elements with class = "green blue" are blue in color because blue was defined after green 
+* Functions don't need names
+* "click" is the keyword, not "onclick"
+* the second parameter of addEventListener has to be a function, but we can't just put a function call because it would evaluate to the return value of the function.
+* The arrow function assigns an entire function as the "return value" to the function that comes before the arrow.
+var <varName> = <function name>(<parameters>){
+    <code>
+    return ...
+};
+
+const <varName> = (<params>) => {
+    <code>
+    return ...
+};
