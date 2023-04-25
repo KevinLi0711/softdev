@@ -14,13 +14,20 @@ var radius = 0;
 var growing = true;
 
 var drawDot = () => {
+    window.requestAnimationFrame(drawDot)
+    clear()
+    drawCircle()
     if (growing) {
-        //window.requestAnimationFrame(drawDot)
-        clear()
-        drawCircle()
-        radius += 10
+        if (radius > c.width / 2) {
+            growing = false
+        }
+        radius += 1
+    } else {
+        if (radius <= 0) {
+            growing = true
+        }
+        radius -= 1
     }
-
 }
 
 var drawCircle = () => {
@@ -32,4 +39,4 @@ var drawCircle = () => {
 }
 
 dotbutton.addEventListener("click", drawDot)
-stopbutton.addEventListener("click", stopIt)
+//stopbutton.addEventListener("click", stopIt)
