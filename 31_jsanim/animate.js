@@ -14,19 +14,20 @@ var radius = 0;
 var growing = true;
 
 var drawDot = () => {
-    window.requestAnimationFrame(drawDot)
-    clear()
-    drawCircle()
+    stopIt() //stops current animation
+    requestID = window.requestAnimationFrame(drawDot) //starts a new animation
+    clear() //clear canvas
+    drawCircle() //draw image
     if (growing) {
+        radius += 1
         if (radius > c.width / 2) {
             growing = false
         }
-        radius += 1
     } else {
+        radius -= 1
         if (radius <= 0) {
             growing = true
         }
-        radius -= 1
     }
 }
 
@@ -36,7 +37,12 @@ var drawCircle = () => {
     ctx.beginPath()
     ctx.arc(x, y, radius, 0, 2 * Math.PI)
     ctx.stroke()
+    ctx.fill()
+}
+
+var stopIt = () => {
+    window.cancelAnimationFrame(requestID) //cancel current animation
 }
 
 dotbutton.addEventListener("click", drawDot)
-//stopbutton.addEventListener("click", stopIt)
+stopbutton.addEventListener("click", stopIt)

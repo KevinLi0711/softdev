@@ -1,0 +1,9 @@
+Team Teamname :: Elizabeth Paperno, Kevin Li
+SoftDev pd0
+K31 -- Animation
+2023-04-25
+
+DISCO:
+* requestAnimationFrame() returns the requestID
+* arc() fails for negative radii
+* an animation continously calls a function. Multiple animations that call the same function can exist simultaneously
