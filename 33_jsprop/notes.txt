@@ -1,0 +1,13 @@
+Team Teamname :: Elizabeth Paperno, Kevin Li
+SoftDev pd0
+K33 -- JS Events Exploration
+2023-04-27
+
+DISCO:
+* alert() sends a notif to the webpage
+* this is a keyword that returns the object that the function is accessed by
+* when true is passed into all the eventListeners the alerts propegates in tree order
+* when true is passed into one eventListener it appears first and the other appear in the order they are run 
+* e.stopPropagation() --> stops further alerts
+* e.cancleBubble = true --> does the same thing as e.stopPropagation() but is no longer used
+* bubbling occurs when events are called on children and parents 
